@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تسجيل الدخول</title>
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            background: linear-gradient(135deg, #252424, #000000);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            width: 350px;
+            text-align: center;
+        }
+        h2 { color: #3f3f3f; margin-bottom: 25px; }
+        input {
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        input:focus { outline: none; border-color: #002f7a; }
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #005bea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover { background: #0046cc; }
+        p { margin-top: 15px; color: #4b4b4b; }
+        a { color: #005bea; text-decoration: none; }
+        #message { margin-top: 10px; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>تسجيل الدخول</h2>
+        <input type="text" id="username" placeholder="اسم المستخدم">
+        <input type="password" id="password" placeholder="كلمة المرور">
+        <button onclick="login()">دخول</button>
+        <p>ليس لديك حساب؟ <a href="register.html">إنشاء حساب</a></p>
+        <p id="message" style="color: red;"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
